@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 id="title"><b>My Calculator</b></h1>
+
+    <div id="calculator">
+      <div class="calculate">
+        <input type="text" id="result" disabled>
+        <br>
+        <button id="clear" onclick="Clear()">AC</button>
+        <button id="delete" onclick="Delete()">⌫</button>
+        <button class="hello" onclick="appendToDisplay('%')">%</button>
+        <button class="hello" onclick="appendToDisplay('/')">/</button>
+        <br>
+
+        <button class="colours" onclick="appendToDisplay('7')">7</button>
+        <button class="colours" onclick="appendToDisplay('8')">8</button>
+        <button class="colours" onclick="appendToDisplay('9')">9</button>
+        <button class="hello" onclick="appendToDisplay('*')">*</button>
+        <br>
+        <button class="colours" onclick="appendToDisplay('4')">4</button>
+        <button class="colours" onclick="appendToDisplay('5')">5</button>
+        <button class="colours" onclick="appendToDisplay('6')">6</button>
+        <button class="hello" onclick="appendToDisplay('-')"
+          id="subtract">-</button>
+        <br>
+        <button class="colours" onclick="appendToDisplay('1')" id="1">1</button>
+        <button class="colours" onclick="appendToDisplay('2')" id="2">2</button>
+        <button class="colours" onclick="appendToDisplay('3')" id="3">3</button>
+        <button class="hello" onclick="appendToDisplay('+')" id="add">+</button>
+        <br>
+        <button class="hello" onclick="appendToDisplay('0')">0</button>
+        <button class="hello" onclick="appendToDisplay('.')">.</button>
+        <button id="equal" onclick="calculate('')">=</button>
+
+      </div>
+    </div>
+    <p id="description">I done this calculator for task using Dom.<br>
+      The calculator buttons are created using the button element, and each
+      button has an onclick attribute that calls a specific JavaScript
+      function.<br>
+      for reset the value i used clear() and delete() is used for delete the
+      data.<br>
+      this code creates a simple calculator with a responsive design.<br>
+      Users can click on buttons to input numbers and perform basic arithmetic
+      operations, and the result is displayed dynamically in the input area<br>
+    </p>
+    <script src="cal.js"></script>
+    <script
+      src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+  </body>
+</html>
